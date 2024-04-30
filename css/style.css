@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* HEADER */
+
+header{
+    background-color: #4c7a34;
+    text-align: center;
+}
+
+header img{
+    height: 80px;
+    width: 110px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.titulo{
+    color: white;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.subtitulo{
+    color: white;
+    font-family: "Edu NSW ACT Foundation", cursive;
+    font-size: 13px;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    letter-spacing: 5px;
+}
+
+.nav{
+    color: white;
+    font-size: 18px;
+    margin-right: 30px;
+    margin-left: 30px;
+    background-color: #4c7a34;
+}
+
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/* HEADER */
+
+
+
+
+
+
+/* MAIN */
+
+
+.mainIndex{
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.borde{
+    height: 300px;
+    width: 25%;
+    border: 1px solid #4c7a34;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.h2{
+    color: #4c7a34;
+    font-size: 25px;
+    text-align: center;
+    font-family: "Edu NSW ACT Foundation", cursive;
+    font-weight: bold;
+}
+
+p.main{
+    color: #4c7a34;
+    font-size: 19px;
+    text-align: center;
+    margin: 10px;
+}
+
+.mitadDePag{
+    width: 100%;
+    background-color: #4c7a34;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+div ul li.secciones{
+    display: inline-flex;
+    font-size: 21px;
+    list-style: none;
+    padding: 20px;
+}
+
+div.articulo h2{
+    font-family: "Edu NSW ACT Foundation", cursive;
+    color: #4c7a34;
+    font-size: 25px;
+    margin: 15px;
+}
+
+p.articulop{
+    color: #4c7a34;
+    font-size: 19px;
+    margin-right: 20%;
+    margin-left: 15px;
+}
+
+/* MAIN */
+
+/* GALERIA GRID */
+
+.galeria{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.grid-container{
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.grid-item{
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    border-radius: 18px;
+}
+
+.item1{
+    background-image: url(../assets/index3.jpeg);
+    grid-column: 1/4;
+    grid-row: 1/3;
+}
+
+.item2{
+    background-image: url(../assets/cajoncito.jpeg);
+    grid-column: 4/5;
+    grid-row: 1/3;
+}
+
+.item3{
+    background-image: url(../assets/fotomuj.png);
+    grid-column: 1/3;
+    grid-row: 3/3;
+}
+
+.item4{
+    background-image: url(../assets/huerta.jpeg);
+    grid-column: 3/5;
+    grid-row: 3/3;
+}
+
+.item5{
+    background-image: url(../assets/florblanca.jpeg);
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.item6{
+    background-image: url(../assets/background1.jpg);
+    grid-column: 2/5;
+    grid-row: 2/3;
+}
+
+
+
+/* GALERIA GRID */
+
+
+/* INFORMACION */
+
+.sobrenosotros{
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    color: #4c7a34;
+    border: 3px solid #4c7a34;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.sobrenosotros h1{
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.decoration{
+    text-decoration: underline;
+}
+
+.sobrenosotros li{
+    margin-bottom: 15px;
+    margin-top: 15px;
+    list-style-type: none;
+}
+
+.grid-container2{
+    margin: 20px;
+    border: 3px solid #4c7a34;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: repeat(4);
+    grid-template-areas: 
+    "img1 texto1"
+    "img2 texto2"
+    "img3 texto3"
+    "img4 texto4";
+    gap: 10px;
+}
+
+.img{
+    margin: 10px;
+    height: auto;
+}
+
+.info-foto{
+    border-radius: 10%;
+    height: 400px;
+    width: 100%;
+}
+
+.texto{
+    color: #4c7a34;
+    text-align: center;
+    align-content: center;
+}
+
+.almacen{
+    font-family: "Raleway", sans-serif;
+    color: #4c7a34;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.infop{
+    margin: 20px;
+    font-size: 18px;
+    color: #4c7a34;
+}
+
+/* INFORMACION */
+
+
+
+
+/* CONTACTO */
+
+fieldset{
+    color: #4c7a34;
+    font-size: 18px;
+    border: solid 3px #4c7a34;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+}
+
+label{
+    padding: 10px;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    color: #4c7a34;
+    font-size: 18px;
+}
+
+.redes a{
+    color: #4c7a34;
+    font-size: 50px;
+    letter-spacing: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+/* CONTACTO */
+
+
+
+
+/* UBICACION */
+
+.mapa{
+    display: grid;
+    text-align: center;
+    margin: 20px;
+}
+
+h4{
+    text-align: center;
+    font-size: 25px;
+    color: #4c7a34;
+    font-family: "Edu NSW ACT Foundation", cursive;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.table{
+    color: #4c7a34;
+    font-size: 18px;
+    border: solid 3px;
+}
+
+.table th{
+    padding: 10px;
+}
+
+.table td{
+    padding: 10px;
+}
+
+
+/* UBICACION */
+
+
+
+
+/* DERECHOS */
+
+.copy{
+    font-family: "Raleway", sans-serif;
+    color: #4c7a34;
+    font-size: 28px;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 20px;
+}
+
+p.derechosTexto{
+    color: #4c7a34;
+    font-size: 23px;
+    text-align: center;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+p.derechosTexto a{
+    color: #4c7a34;
+}
+/* DERECHOS */
+
+
+
+
+/* FOOTER */
+
+footer{
+    background-color: #4c7a34;
+    padding: 20px;
+}
+
+.contenidoFooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contacto{
+    text-align: center;
+    font-size: 20px;
+}
+
+.contacto a{
+    margin: 5px;
+}
+
+a:hover{
+    color: rgb(74, 1, 1);
+}
+
+.derechos{
+    color: white;
+    font-size: 18px;
+    font-family: Helvetica;
+    text-align: center;
+    margin: 0;
+}
+
+.derechos a{
+    margin: 10px;
+}
+
+/* FOOTER */
+
+
+.subir{
+    height: 30px;
+    width: 30px;
+    background-color: #4c7a34;
+    color: white;
+    position: fixed;
+    right: 30px;
+    bottom: 60px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    border-radius: 70%;
+    box-shadow: 0 0 3px 2px white;
+}
