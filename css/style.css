@@ -15,6 +15,9 @@ html{
 }
 
 
+
+
+
 /* HEADER */
 
 header{
@@ -78,10 +81,11 @@ a{
 
 
 
-/* MAIN */
+
+/* INDEX y MAIN */
 
 
-.mainIndex{
+.main-index{
     display: flex;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -102,8 +106,6 @@ a{
     text-align: center;
     font-family: "Edu NSW ACT Foundation", cursive;
     font-weight: bold;
-    justify-content: center;
-    align-content: center;
 }
 
 p.main{
@@ -113,18 +115,18 @@ p.main{
     margin: 10px;
 }
 
-.mitadDePag{
+.mitad-de-pag{
     width: 100%;
     background-color: #4c7a34;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     text-align: center;
 }
 
 div ul li.secciones{
     display: inline-flex;
-    font-size: 21px;
+    font-size: 20px;
     list-style: none;
-    padding: 20px;
+    padding: 10px;
 }
 
 div.articulo h2{
@@ -134,14 +136,15 @@ div.articulo h2{
     margin: 15px;
 }
 
-p.articulop{
-    color: #4c7a34;
-    font-size: 19px;
-    margin-right: 20%;
-    margin-left: 15px;
-}
 
-/* MAIN */
+/* INDEX y MAIN */
+
+
+
+
+
+
+
 
 /* GALERIA GRID */
 
@@ -204,9 +207,13 @@ p.articulop{
     grid-row: 2/3;
 }
 
-
-
 /* GALERIA GRID */
+
+
+
+
+
+
 
 
 /* INFORMACION */
@@ -287,6 +294,9 @@ p.articulop{
 
 
 
+
+
+
 /* CONTACTO */
 
 fieldset{
@@ -319,6 +329,9 @@ label{
     margin-right: 20px;
 }
 /* CONTACTO */
+
+
+
 
 
 
@@ -356,6 +369,13 @@ h4{
 
 
 
+
+
+
+
+
+
+
 /* DERECHOS */
 
 .copy{
@@ -381,6 +401,8 @@ p.derechosTexto a{
     color: #4c7a34;
 }
 /* DERECHOS */
+
+
 
 
 
@@ -427,6 +449,7 @@ a:hover{
 /* FOOTER */
 
 
+/* BOTON SUBIR */
 .subir{
     height: 30px;
     width: 30px;
@@ -440,4 +463,145 @@ a:hover{
     font-size: 20px;
     border-radius: 70%;
     box-shadow: 0 0 3px 2px white;
+}
+
+/* BOTON SUBIR */
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+
+
+
+@media (max-width: 1200px){
+
+    .titulo{
+        font-size: 22px;
+    }
+
+    .nav{
+        font-size: 16px;
+    }
+    
+    .borde{
+        height: 280px;
+        width: 260px;
+        border-radius: 10px;
+    }
+
+    p.main{
+        font-size: 16px;
+    }
+    
+    .mitad-de-pag{
+        letter-spacing: 2px;
+    }
+    
+    div ul li.secciones{
+        display: inline-flex;
+        font-size: 16px;
+    }
+    
+    div.articulo h2{
+        font-size: 23px;
+    }
+    
+    footer{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contacto{
+        font-size: 16px;
+    }
+
+    .derechos{
+        font-size: 16px;
+    }
+
+    .grid-container{
+        margin: 10px;
+        gap: 5px;
+    }
+    
+    .grid-item{
+        height: 300px;
+        width: 100%;
+        border-radius: 17px;
+    }
+
+    .grid-container2{
+        padding: 15px;
+        margin: 20px;
+        gap: 10px;
+    }
+    
+    .texto{
+        height: 300px;
+    }
+
+    .img{
+        height: auto;
+    }
+    
+    .info-foto{
+        border-radius: 8%;
+        height: 300px;
+    }
+    
+    .almacen{
+        margin: 1px;
+        font-size: 19px;
+    }
+    
+    .infop{
+        margin: 10px;
+        font-size: 16px;
+    }
+
+}
+
+
+
+@media (max-width: 992px){
+
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header img{
+        height: 70px;
+        width: 90px;
+    }
+    
+    .titulo{
+        font-size: 20px;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .subtitulo{
+        font-size: 13px;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    
+    nav{
+        display: none;
+    }
+
 }
