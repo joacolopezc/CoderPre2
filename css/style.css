@@ -89,6 +89,7 @@ a {
     color: #4c7a34;
     font-size: 25px;
     text-align: center;
+    margin-top: 20px;
     font-family: "Edu NSW ACT Foundation", cursive;
     font-weight: bold;
 }
@@ -299,6 +300,7 @@ label {
 
 .mapa {
     text-align: center;
+    padding: 10px;
 }
 
 h4 {
@@ -310,16 +312,24 @@ h4 {
     font-weight: bold;
 }
 
-.table-responsive-x1 {
-    text-align: center;
-    margin: 10px;
-    padding: 10px;
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
 
-.table {
+.mapa,
+.horario {
+    margin-top: 15px;
+    width: 80%;
+    max-width: 700px;
+}
+
+.table{
+    text-align: center;
     color: #4c7a34;
-    font-size: 18px;
-    border: solid 2px;
+    font-size: 20px;
 }
 
 /* UBICACION */
@@ -570,7 +580,6 @@ a:hover {
         background-color: #4c7a34;
     }
 
-
     .container-fluid {
         justify-content: space-evenly;
     }
@@ -586,6 +595,12 @@ a:hover {
         color: white;
     }
 
+    .titulo h2{
+        font-family: "Edu NSW ACT Foundation", cursive;
+        text-transform: uppercase;
+        font-size: 15px;
+    }
+
     button {
         color: white !important;
     }
@@ -595,4 +610,64 @@ a:hover {
     }
 }
 
+@media (max-width: 770px) {
+    .mapa,
+    .horario {
+         width: 90%; /* Ajusta el ancho para dispositivos más pequeños */
+    }
 
+    .table{
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 680px){
+    .contenidoFooter {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contacto {
+        text-align: center;
+        font-size: 13px;
+    }
+    
+    .derechos {
+        font-size: 13px;
+    }
+}
+
+
+@media (max-width: 550px){
+    .container-fluid img {
+        height: 50px;
+        width: 80px;
+    }
+
+    .titulo h1{
+        font-size: 15px;
+    }
+
+    .titulo h2{
+        font-size: 13px;
+    }
+
+    .h2{
+        font-size: 20px;
+    }
+
+    p.main{
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 470px){
+    iframe{
+        height: 300px;
+    }
+    .table{
+        font-size: 10px;
+    }
+}
