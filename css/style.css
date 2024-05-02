@@ -533,14 +533,14 @@ a:hover {
     }
     
     .jumbotron-foto{
-        background-image: url(../assets/huerto-urbano.jpg);
+        background-image: url(../assets/paisaje.jpg);
         background-position: center;
         background-size: cover;
         height: 350px;
     }
     
     .jumbotron-foto2{
-        background-image: url(../assets/index2.jpeg);
+        background-image: url(../assets/huerto-urbano.jpg);
         background-position: center;
         background-size: cover;
         height: 350px;
