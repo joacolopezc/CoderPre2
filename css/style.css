@@ -604,6 +604,11 @@ a:hover {
         color: white !important;
     }
 
+    .collapse{
+        font-size: 16px;
+        text-align: center;
+    }
+
     a {
         color: white !important;
     }
