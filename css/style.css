@@ -525,20 +525,19 @@ a:hover {
     .main-index{
         display: none;
     }
-
-
+    
     .jumbotron-foto{
         background-image: url(../assets/huerto-urbano.jpg);
         background-position: center;
         background-size: cover;
-        height: 400px;
+        height: 350px;
     }
     
     .jumbotron-foto2{
         background-image: url(../assets/index2.jpeg);
         background-position: center;
         background-size: cover;
-        height: 400px;
+        height: 350px;
     }
     
     .articuloj{
