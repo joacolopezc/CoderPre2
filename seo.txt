@@ -1,0 +1,5 @@
+1. Agregue los meta description en todos lo html.
+
+2. Agregue los meta keywords en todos lo html.
+
+3. Le coloque alt a todas las imágenes.

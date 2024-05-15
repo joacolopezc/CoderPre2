@@ -1,0 +1,29 @@
+fieldset {
+    color: #4c7a34;
+    font-size: 18px;
+    border: solid 3px #4c7a34;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+}
+
+label {
+    padding: 10px;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    color: #4c7a34;
+    font-size: 18px;
+}
+
+.redes a {
+    color: #4c7a34;
+    font-size: 50px;
+    letter-spacing: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}

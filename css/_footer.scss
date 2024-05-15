@@ -1,0 +1,37 @@
+footer {
+    background-color: #4c7a34;
+    width: 100%;
+    padding: 20px;
+}
+
+.contenidoFooter {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.contacto {
+    text-align: center;
+    font-size: 20px;
+}
+
+.contacto a {
+    margin: 5px;
+}
+
+a:hover {
+    color: rgb(74, 6, 6);
+}
+
+.derechos {
+    color: white;
+    font-size: 18px;
+    font-family: Helvetica;
+    text-align: center;
+    margin: 0;
+}
+
+.derechos a {
+    margin: 10px;
+}
