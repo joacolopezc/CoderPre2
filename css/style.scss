@@ -2,14 +2,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
-* {
+// Variables
+
+$color-principal: #4c7a34;
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+body{
     font-family: "Poppins", sans-serif;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    
 }
 
 html {
@@ -17,57 +27,54 @@ html {
 }
 
 /* HEADER */
+
 header {
-    background-color: #4c7a34;
+    background-color: $color-principal;
     text-align: center;
     margin: 0px;
     padding: 0px;
+
+    img {
+        height: 80px;
+        width: 110px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    .titulo {
+        color: white;
+        padding-top: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    
+    .subtitulo {
+        color: white;
+        font-family: "Edu NSW ACT Foundation", cursive;
+        font-size: 15px;
+        padding-top: 0px;
+        margin-top: 2px;
+        margin-bottom: 15px;
+    }
+    
+    nav ul li {
+        list-style: none;
+        display: inline-block;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        letter-spacing: 5px;
+    }
+    
+    .nav {
+        color: white;
+        font-size: 18px;
+        margin-right: 30px;
+        margin-left: 30px;
+        background-color: $color-principal;
+    }
 }
 
-header img {
-    height: 80px;
-    width: 110px;
-    margin-top: 10px;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-}
-
-.titulo {
-    color: white;
-    padding-top: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-.subtitulo {
-    color: white;
-    font-family: "Edu NSW ACT Foundation", cursive;
-    font-size: 15px;
-    padding-top: 0px;
-    margin-top: 2px;
-    margin-bottom: 15px;
-}
-
-nav ul li {
-    list-style: none;
-    display: inline-block;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    letter-spacing: 5px;
-}
-
-.nav {
-    color: white;
-    font-size: 18px;
-    margin-right: 30px;
-    margin-left: 30px;
-    background-color: #4c7a34;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-}
 /* HEADER */
 
 /* INDEX y MAIN */
@@ -84,9 +91,8 @@ a {
     margin-left: 10px;
     margin-right: 10px;
 }
-
 .h2 {
-    color: #4c7a34;
+    color: $color-principal;
     font-size: 25px;
     text-align: center;
     margin-top: 20px;
@@ -95,32 +101,35 @@ a {
 }
 
 p.main {
-    color: #4c7a34;
-    font-size: 19px;
+    color: $color-principal;
+    font-size: 20px;
     text-align: center;
     margin: 10px;
 }
 
-.mitad-de-pag {
-    width: 100%;
-    background-color: #4c7a34;
-    letter-spacing: 3px;
-    text-align: center;
-}
-
-div ul li.secciones {
-    display: inline-flex;
-    font-size: 20px;
-    list-style: none;
-    padding: 10px;
-}
-
 div.articulo h2 {
     font-family: "Edu NSW ACT Foundation", cursive;
-    color: #4c7a34;
+    color: $color-principal;
     font-size: 25px;
     margin: 15px;
 }
+
+
+.mitad-de-pag {
+    width: 100%;
+    background-color: $color-principal;
+    letter-spacing: 3px;
+    text-align: center;
+
+    .secciones {
+        display: inline-flex;
+        font-size: 20px;
+        list-style: none;
+        padding: 10px;
+    }
+}
+
+
 /* INDEX y MAIN */
 
 
@@ -135,7 +144,7 @@ div.articulo h2 {
 }
 
 .copy {
-    color: #4c7a34;
+    color: $color-principal;
     font-size: 28px;
     text-align: center;
     text-decoration: underline;
@@ -143,14 +152,14 @@ div.articulo h2 {
 }
 
 p.derechosTexto {
-    color: #4c7a34;
+    color: $color-principal;
     font-size: 23px;
     text-align: center;
     padding: 20px;
 }
 
 p.derechosTexto a {
-    color: #4c7a34;
+    color: $color-principal;
 }
 /* DERECHOS */
 
@@ -158,7 +167,7 @@ p.derechosTexto a {
 .subir {
     height: 30px;
     width: 30px;
-    background-color: #4c7a34;
+    background-color: $color-principal;
     color: white;
     position: fixed;
     right: 30px;
@@ -172,7 +181,11 @@ p.derechosTexto a {
 /* BOTON SUBIR */
 
 
-
+@import "galeria.scss";
+@import "informacion.scss";
+@import "ubicacion.scss";
+@import "contacto.scss";
+@import "footer.scss";
 
 /* MEDIA QUERIES */
 /* MEDIA QUERIES */
@@ -194,7 +207,7 @@ p.derechosTexto a {
     }
 
     p.main {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .mitad-de-pag {
@@ -239,28 +252,23 @@ p.derechosTexto a {
         margin: 20px;
         gap: 10px;
     }
+}
 
-    .texto {
-        height: 300px;
+@media (max-width: 1000px){
+    .nav-pc{
+        .nav{
+            font-size: 18px;
+        }
     }
 
-    .img {
-        height: auto;
-    }
+    .main-index{
+        .h2{
+            font-size: 22px;
+        }
 
-    .info-foto {
-        border-radius: 8%;
-        height: 300px;
-    }
-
-    .almacen {
-        margin: 1px;
-        font-size: 19px;
-    }
-
-    .infop {
-        margin: 10px;
-        font-size: 16px;
+        .main{
+            font-size: 16px;
+        }
     }
 }
 
@@ -271,112 +279,104 @@ p.derechosTexto a {
 }
 
 @media (max-width: 918px){
-
     .main-index{
         display: none;
     }
-    
-    .jumbotron-foto{
-        background-image: url(../assets/paisaje.jpg);
-        background-position: center;
-        background-size: cover;
-        height: 350px;
-    }
-    
-    .jumbotron-foto2{
-        background-image: url(../assets/huerto-urbano.jpg);
-        background-position: center;
-        background-size: cover;
-        height: 350px;
-    }
-    
-    .articuloj{
-        color: #4c7a34;
-        align-content: center;
-        text-align: center;
-        height: 400px;
-    }
-    
-    .h2j{
-        margin: 10px;
-        font-size: 22px;
-        font-family: "Edu NSW ACT Foundation", cursive;
-        font-weight: bold;
-    }
-    
-    p.mainj {
-        margin: 10px;
-        font-size: 18px;
+
+    .main-indexj{
+        .jumbotron-foto{
+            background-image: url(../assets/paisaje.jpg);
+            background-position: center;
+            background-size: cover;
+            height: 350px;
+        }
+        
+        .jumbotron-foto2{
+            background-image: url(../assets/huerto-urbano.jpg);
+            background-position: center;
+            background-size: cover;
+            height: 350px;
+        }
+        
+        .articuloj{
+            color: $color-principal;
+            align-content: center;
+            text-align: center;
+            height: 400px;
+        }
+        
+        .h2j{
+            margin: 10px;
+            font-size: 22px;
+            font-family: "Edu NSW ACT Foundation", cursive;
+            font-weight: bold;
+        }
+        
+        .mainj{
+            margin: 10px;
+            font-size: 20px;
+        }
     }
 }
 
+@media (max-width: 830px){
+    .nav-pc{
+        display: none;
+    }
+}
 
-@media (min-width: 780px){
+@media (min-width: 830px){
     .navbar{
         display: none;
     }
 }
 
-@media (max-width: 780px){
-    .nav-pc{
-        display: none;
-    }
+@media (max-width: 830px){
 
     .navbar {
-        background-color: #4c7a34;
+        background-color: $color-principal;
+
+        .titulo {
+            margin-left: 0px;
+            text-align: center;
+            color: white;
+        }
+    
+        h2{
+            font-family: "Edu NSW ACT Foundation", cursive;
+            text-transform: uppercase;
+            font-size: 18px;
+        }
+    
+        button {
+            color: white !important;
+        }
+        
+        .collapse{
+            font-size: 16px;
+            text-align: center;
+        }
     }
+    
 
     .container-fluid img {
         height: 60px;
         width: 80px;
     }
 
-    .titulo {
-        margin-left: 0px;
-        text-align: center;
-        color: white;
-    }
-
-    .titulo h2{
-        font-family: "Edu NSW ACT Foundation", cursive;
-        text-transform: uppercase;
-        font-size: 15px;
-    }
-
-    button {
-        color: white !important;
-    }
-
-    .collapse{
-        font-size: 16px;
-        text-align: center;
-    }
-
     div.redes a{
-        color: #4c7a34 !important;
+        color: $color-principal !important;
     }
     a.mail{
-        color: #4c7a34 !important;
+        color: $color-principal !important;
     }
 
     a {
         color: white !important;
     }
-}
 
-@media (max-width: 770px) {
-    .mapa,
-    .horario {
-         width: 90%; /* Ajusta el ancho para dispositivos más pequeños */
-    }
-
-    .table{
-        font-size: 15px;
-    }
-}
-
-@media (max-width: 750px){
     .grid-container2 {
+        display: grid;
         grid-template-columns: 100%;
         grid-template-rows: repeat(12, 1fr);
         grid-template-areas:
@@ -392,17 +392,30 @@ p.derechosTexto a {
             "texto5"
             "img6"
             "texto6";
-        gap: 5px;
+        gap: 0px;
+
+        .img{
+            height: auto;
+        }
     }   
     
-    .img img{
-        height: 300px;
+}
+
+@media (max-width: 768px) {
+    .mapa,
+    .horario {
+        width: 90%;
     }
 
+    .table{
+        font-size: 15px;
+    }
 }
+
 
 @media (max-width: 680px){
     
+
     .contacto {
         text-align: center;
         font-size: 15px;
@@ -427,24 +440,27 @@ p.derechosTexto a {
 @media (max-width: 550px){
 
     .container-fluid img {
-        height: 35px;
+        height: auto;
         width: 50px;
+
+        .texto{
+            height: auto;
+            width: 100%;
+        }
     }
 
-    .titulo h1{
-        font-size: 15px;
-    }
-
-    .titulo h2{
-        font-size: 13px;
+    .titulo{
+        h1{
+            font-size: 16px;
+        }
+    
+        h2{
+            font-size: 14px;
+        }
     }
 
     .h2{
         font-size: 20px;
-    }
-
-    p.main{
-        font-size: 15px;
     }
 }
 
@@ -458,20 +474,23 @@ p.derechosTexto a {
     .grid-container2 {
         grid-template-columns: 100%;
         grid-template-rows: repeat(12, 1fr);
-        gap: 20px;
+        gap: 0px;
+
+        .img img{
+            margin: 0px;
+            height: 250px;
+        }
+    
+        .almacen{
+            font-size: 20px;
+        }
+    
+        .infop{
+            margin: 10px;
+            font-size: 16px;
+        }
     }   
     
-    .img img{
-        height: 250px;
-    }
-
-    .almacen{
-        font-size: 16px;
-    }
-
-    .infop{
-        font-size: 14px;
-    }
 
     footer{
         width: 100%;
@@ -485,7 +504,19 @@ p.derechosTexto a {
     }
 }
 
+@media (max-width: 390px){
+    .main-indexj{
+        p.mainj{
+            font-size: 18px;
+        }
+    }
+    
+}
+
 @media (max-width: 380px){
+    .mainj{
+        margin: 10px;
+    }
 
     .copy{
         font-size: 18px;
@@ -504,9 +535,3 @@ p.derechosTexto a {
         font-size: 13px;
     }
 }
-
-@import "galeria.scss";
-@import "informacion.scss";
-@import "ubicacion.scss";
-@import "contacto.scss";
-@import "footer.scss";
