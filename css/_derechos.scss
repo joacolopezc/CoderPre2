@@ -1,0 +1,27 @@
+.div-copy{
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+    
+    .copy {
+        color: $color-principal;
+        font-size: 28px;
+        text-align: center;
+        text-decoration: underline;
+        margin-top: 20px;
+    }
+    
+    p.derechosTexto {
+        color: $color-principal;
+        font-size: 23px;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    p.derechosTexto a {
+        color: $color-principal;
+    }
+}

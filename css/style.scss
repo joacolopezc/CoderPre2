@@ -77,20 +77,8 @@ header {
 
 /* HEADER */
 
-/* INDEX y MAIN */
-.main-index {
-    display: flex;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
+/* MAIN */
 
-.borde {
-    height: 300px;
-    width: 350px;
-    border-radius: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
 .h2 {
     color: $color-principal;
     font-size: 25px;
@@ -100,68 +88,8 @@ header {
     font-weight: bold;
 }
 
-p.main {
-    color: $color-principal;
-    font-size: 20px;
-    text-align: center;
-    margin: 10px;
-}
+/* MAIN */
 
-div.articulo h2 {
-    font-family: "Edu NSW ACT Foundation", cursive;
-    color: $color-principal;
-    font-size: 25px;
-    margin: 15px;
-}
-
-
-.mitad-de-pag {
-    width: 100%;
-    background-color: $color-principal;
-    letter-spacing: 3px;
-    text-align: center;
-
-    .secciones {
-        display: inline-flex;
-        font-size: 20px;
-        list-style: none;
-        padding: 10px;
-    }
-}
-
-
-/* INDEX y MAIN */
-
-
-/* DERECHOS */
-.div-copy{
-    font-family: "Raleway", sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    padding: 20px;
-}
-
-.copy {
-    color: $color-principal;
-    font-size: 28px;
-    text-align: center;
-    text-decoration: underline;
-    margin-top: 20px;
-}
-
-p.derechosTexto {
-    color: $color-principal;
-    font-size: 23px;
-    text-align: center;
-    padding: 20px;
-}
-
-p.derechosTexto a {
-    color: $color-principal;
-}
-/* DERECHOS */
 
 /* BOTON SUBIR */
 .subir {
@@ -180,11 +108,12 @@ p.derechosTexto a {
 }
 /* BOTON SUBIR */
 
-
+@import "index.scss";
 @import "galeria.scss";
 @import "informacion.scss";
 @import "ubicacion.scss";
 @import "contacto.scss";
+@import "derechos.scss";
 @import "footer.scss";
 
 /* MEDIA QUERIES */
@@ -200,28 +129,21 @@ p.derechosTexto a {
         font-size: 16px;
     }
 
-    .borde {
-        height: 280px;
-        width: 260px;
-        border-radius: 10px;
+    .main-index{
+        .borde {
+            border-radius: 10px;
+        }
+    
+        .articulo {
+            h2 {
+                font-size: 22px;
+            }
+            p.main {
+                font-size: 18px;
+            }
+        }
     }
-
-    p.main {
-        font-size: 18px;
-    }
-
-    .mitad-de-pag {
-        letter-spacing: 2px;
-    }
-
-    div ul li.secciones {
-        display: inline-flex;
-        font-size: 16px;
-    }
-
-    div.articulo h2 {
-        font-size: 23px;
-    }
+    
 
     footer {
         width: 100%;
@@ -254,6 +176,25 @@ p.derechosTexto a {
     }
 }
 
+@media (max-width: 1120px){
+    .main-index{
+        .borde{
+            height: 300px;
+            width: 330px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        .articulo {
+            h2 {
+                font-size: 20px;
+            }
+            p.main {
+                font-size: 17px;
+            }
+        }
+    }
+}
+
 @media (max-width: 1000px){
     .nav-pc{
         .nav{
@@ -262,12 +203,19 @@ p.derechosTexto a {
     }
 
     .main-index{
-        .h2{
-            font-size: 22px;
+        .borde{
+            height: 300px;
+            width: 290px;
+            margin-left: 5px;
+            margin-right: 5px;
         }
-
-        .main{
-            font-size: 16px;
+        .articulo {
+            h2 {
+                font-size: 20px;
+            }
+            p.main {
+                font-size: 17px;
+            }
         }
     }
 }
@@ -307,7 +255,7 @@ p.derechosTexto a {
         
         .h2j{
             margin: 10px;
-            font-size: 22px;
+            font-size: 25px;
             font-family: "Edu NSW ACT Foundation", cursive;
             font-weight: bold;
         }
@@ -345,7 +293,7 @@ p.derechosTexto a {
         h2{
             font-family: "Edu NSW ACT Foundation", cursive;
             text-transform: uppercase;
-            font-size: 18px;
+            font-size: 20px;
         }
     
         button {
@@ -451,11 +399,11 @@ p.derechosTexto a {
 
     .titulo{
         h1{
-            font-size: 16px;
+            font-size: 20px;
         }
     
         h2{
-            font-size: 14px;
+            font-size: 15px;
         }
     }
 
@@ -514,6 +462,20 @@ p.derechosTexto a {
 }
 
 @media (max-width: 380px){
+    .titulo{
+        h1{
+            font-size: 18px;
+        }
+    
+        h2{
+            font-size: 14px;
+        }
+    }
+
+    .h2{
+        font-size: 18px;
+    }
+
     .mainj{
         margin: 10px;
     }

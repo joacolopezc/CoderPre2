@@ -1,0 +1,44 @@
+.main-index {
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+    .borde {
+        height: 300px;
+        width: 350px;
+        border-radius: 10px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .articulo{
+        align-content: center;
+
+        h2 {
+            margin: 10px;
+        }
+        
+        p.main {
+            color: $color-principal;
+            font-size: 19px;
+            text-align: center;
+            margin: 10px;
+        }
+    }
+}
+
+.mitad-de-pag {
+    width: 100%;
+    background-color: $color-principal;
+    letter-spacing: 3px;
+    text-align: center;
+
+    .secciones {
+        display: inline-flex;
+        font-size: 20px;
+        list-style: none;
+        padding: 10px;
+    }
+}
+
+
