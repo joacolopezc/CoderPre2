@@ -452,6 +452,37 @@ header {
     }
 }
 
+@media (max-width: 435px){
+    .main-indexj{
+        .articuloj{
+            padding: 20px;
+            .h2j{
+                font-size: 22px;
+            }
+
+            .mainj{
+                font-size: 18px;
+            }
+        }
+    }
+
+    .mitad-de-pag{
+        .secciones{
+            font-size: 18px;
+        }
+    }
+
+    footer{
+        .contacto {
+            font-size: 15px;
+        }
+        
+        .derechos {
+            font-size: 14px;
+        }
+    }
+}
+
 @media (max-width: 390px){
     .main-indexj{
         p.mainj{
@@ -488,12 +519,28 @@ header {
         font-size: 15px;
     }
     
-    .contacto {
-        text-align: center;
-        font-size: 13px;
+}
+
+@media (max-width: 350px){
+    .main-indexj{
+        .articuloj{
+            .h2j{
+                font-size: 20px;
+            }
+
+            .mainj{
+                font-size: 17px;
+            }
+        }
     }
-    
-    .derechos {
-        font-size: 13px;
+
+    footer{
+        .contacto {
+            font-size: 14px;
+        }
+        
+        .derechos {
+            font-size: 13px;
+        }
     }
 }
