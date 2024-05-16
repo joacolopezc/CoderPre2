@@ -10,6 +10,9 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+body a:hover {
+  color: rgb(74, 6, 6);
+}
 body a {
   color: white;
   text-decoration: none;
@@ -355,9 +358,6 @@ footer .contacto {
 }
 footer .contacto a {
   margin: 5px;
-}
-footer a:hover {
-  color: rgb(74, 6, 6);
 }
 footer .derechos {
   color: white;
