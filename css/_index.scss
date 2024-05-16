@@ -27,6 +27,15 @@
     }
 }
 
+.h2 {
+    color: $color1;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: "Edu NSW ACT Foundation", cursive;
+    font-weight: bold;
+}
+
 .mitad-de-pag {
     width: 100%;
     background-color: $color1;
@@ -42,3 +51,19 @@
 }
 
 
+/* BOTON SUBIR */
+.subir {
+    height: 30px;
+    width: 30px;
+    background-color: $color1;
+    color: $color2;
+    position: fixed;
+    right: 30px;
+    bottom: 60px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    border-radius: 70%;
+    box-shadow: 0 0 3px 2px $color2;
+}
+/* BOTON SUBIR */
