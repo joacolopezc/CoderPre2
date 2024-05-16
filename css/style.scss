@@ -4,23 +4,23 @@
 
 // Variables
 
-$color-principal: #4c7a34;
+$color1: #4c7a34;
+$color2: white;
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 body{
-    font-family: "Poppins", sans-serif;
-
     a:hover {
         color: rgb(74, 6, 6);
     }
     
     a {
-        color: white;
+        color: $color2;
         text-decoration: none;
     }
     
@@ -30,11 +30,20 @@ html {
     scroll-behavior: smooth;
 }
 
+@import "header.scss";
+@import "index.scss";
+@import "galeria.scss";
+@import "informacion.scss";
+@import "ubicacion.scss";
+@import "contacto.scss";
+@import "derechos.scss";
+@import "footer.scss";
+
 
 /* MAIN */
 
 .h2 {
-    color: $color-principal;
+    color: $color1;
     font-size: 25px;
     text-align: center;
     margin-top: 20px;
@@ -49,8 +58,8 @@ html {
 .subir {
     height: 30px;
     width: 30px;
-    background-color: $color-principal;
-    color: white;
+    background-color: $color1;
+    color: $color2;
     position: fixed;
     right: 30px;
     bottom: 60px;
@@ -58,18 +67,9 @@ html {
     line-height: 30px;
     font-size: 20px;
     border-radius: 70%;
-    box-shadow: 0 0 3px 2px white;
+    box-shadow: 0 0 3px 2px $color2;
 }
 /* BOTON SUBIR */
-
-@import "header.scss";
-@import "index.scss";
-@import "galeria.scss";
-@import "informacion.scss";
-@import "ubicacion.scss";
-@import "contacto.scss";
-@import "derechos.scss";
-@import "footer.scss";
 
 /* MEDIA QUERIES */
 /* MEDIA QUERIES */
@@ -202,7 +202,7 @@ html {
         }
         
         .articuloj{
-            color: $color-principal;
+            color: $color1;
             align-content: center;
             text-align: center;
             height: 400px;
@@ -237,12 +237,12 @@ html {
 @media (max-width: 830px){
 
     .navbar {
-        background-color: $color-principal;
+        background-color: $color1;
 
         .titulo {
             margin-left: 0px;
             text-align: center;
-            color: white;
+            color: $color2;
             
             img{
                 height: 70px;
@@ -258,11 +258,11 @@ html {
     
         button {
             font-size: 20px;
-            color: white !important;
+            color: $color2 !important;
         }
         
         .collapse{
-            font-size: 16px;
+            font-size: 17px;
             text-align: center;
         }
     }
@@ -274,14 +274,14 @@ html {
     }
 
     div.redes a{
-        color: $color-principal !important;
+        color: $color1 !important;
     }
     a.mail{
-        color: $color-principal !important;
+        color: $color1 !important;
     }
 
     a {
-        color: white !important;
+        color: $color2 !important;
     }
 
     .grid-container2 {
@@ -387,6 +387,10 @@ html {
                 font-size: 15px;
             }
         }
+
+        .collapse{
+            font-size: 16px;
+        }
     }
 
     .div-copy{
@@ -409,7 +413,7 @@ html {
     
         .infop{
             margin: 10px;
-            font-size: 16px;
+            font-size: 15px;
         }
     }   
     

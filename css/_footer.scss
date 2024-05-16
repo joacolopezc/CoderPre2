@@ -1,5 +1,5 @@
 footer {
-    background-color: #4c7a34;
+    background-color: $color1;
     width: 100%;
     padding: 20px;
 
@@ -20,7 +20,7 @@ footer {
     }
     
     .derechos {
-        color: white;
+        color: $color2;
         font-size: 18px;
         font-family: Helvetica;
         text-align: center;

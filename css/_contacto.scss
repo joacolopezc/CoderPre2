@@ -1,7 +1,7 @@
 fieldset {
-    color: #4c7a34;
+    color: $color1;
     font-size: 18px;
-    border: solid 3px #4c7a34;
+    border: solid 3px $color1;
     border-radius: 5px;
     margin: 20px;
     padding: 20px;
@@ -16,12 +16,12 @@ label {
     justify-content: center;
     padding: 10px;
     margin: 10px;
-    color: #4c7a34;
+    color: $color1;
     font-size: 18px;
 }
 
 .redes a {
-    color: #4c7a34;
+    color: $color1;
     font-size: 50px;
     letter-spacing: 10px;
     margin-left: 20px;
