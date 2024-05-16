@@ -22,7 +22,34 @@ html {
   scroll-behavior: smooth;
 }
 
-/* HEADER */
+/* MAIN */
+.h2 {
+  color: #4c7a34;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 20px;
+  font-family: "Edu NSW ACT Foundation", cursive;
+  font-weight: bold;
+}
+
+/* MAIN */
+/* BOTON SUBIR */
+.subir {
+  height: 30px;
+  width: 30px;
+  background-color: #4c7a34;
+  color: white;
+  position: fixed;
+  right: 30px;
+  bottom: 60px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 20px;
+  border-radius: 70%;
+  box-shadow: 0 0 3px 2px white;
+}
+
+/* BOTON SUBIR */
 header {
   background-color: #4c7a34;
   text-align: center;
@@ -65,35 +92,6 @@ header .nav {
   background-color: #4c7a34;
 }
 
-/* HEADER */
-/* MAIN */
-.h2 {
-  color: #4c7a34;
-  font-size: 25px;
-  text-align: center;
-  margin-top: 20px;
-  font-family: "Edu NSW ACT Foundation", cursive;
-  font-weight: bold;
-}
-
-/* MAIN */
-/* BOTON SUBIR */
-.subir {
-  height: 30px;
-  width: 30px;
-  background-color: #4c7a34;
-  color: white;
-  position: fixed;
-  right: 30px;
-  bottom: 60px;
-  text-align: center;
-  line-height: 30px;
-  font-size: 20px;
-  border-radius: 70%;
-  box-shadow: 0 0 3px 2px white;
-}
-
-/* BOTON SUBIR */
 .main-index {
   display: flex;
   margin-bottom: 20px;
