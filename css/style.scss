@@ -35,8 +35,8 @@ header {
     padding: 0px;
 
     img {
-        height: 80px;
-        width: 110px;
+        height: 90px;
+        width: 200px;
         margin-top: 10px;
         margin-bottom: 0px;
         padding-bottom: 0px;
@@ -288,15 +288,21 @@ header {
             margin-left: 0px;
             text-align: center;
             color: white;
-        }
-    
-        h2{
-            font-family: "Edu NSW ACT Foundation", cursive;
-            text-transform: uppercase;
-            font-size: 20px;
+            
+            img{
+                height: 70px;
+                width: 180px;
+            }
+
+            h2{
+                font-family: "Edu NSW ACT Foundation", cursive;
+                text-transform: uppercase;
+                font-size: 17px;
+            }
         }
     
         button {
+            font-size: 20px;
             color: white !important;
         }
         
@@ -414,6 +420,19 @@ header {
 
 
 @media (max-width: 470px){
+    
+    .navbar{
+        .titulo{
+            img{
+                height: 50px;
+                width: 150px;
+            }
+
+            h2{
+                font-size: 15px;
+            }
+        }
+    }
 
     .div-copy{
         padding: 0px;
@@ -484,6 +503,23 @@ header {
 }
 
 @media (max-width: 390px){
+    .navbar{
+        .titulo{
+            img{
+                height: 45px;
+                width: 130px;
+            }
+
+            h2{
+                font-size: 13px;
+            }
+        }
+
+        button {
+            font-size: 17px;
+        }
+    }
+
     .main-indexj{
         p.mainj{
             font-size: 18px;
