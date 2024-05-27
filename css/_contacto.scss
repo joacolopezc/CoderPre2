@@ -1,14 +1,24 @@
 fieldset {
     color: $color1;
-    font-size: 18px;
+    font-size: 20px;
     border: solid 3px $color1;
     border-radius: 5px;
     margin: 20px;
     padding: 20px;
 }
 
-label {
-    padding: 10px;
+form{
+    label {
+        padding: 10px;
+    }
+}
+
+.enviard{
+    .enviar{
+        background-color: $color1;
+        color: $color2;
+        border: none;
+    }
 }
 
 .redes {

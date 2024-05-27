@@ -5,28 +5,28 @@
 $color1: #4c7a34;
 $color2: white;
 
-*{
+* {
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
 }
 
-body{
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
 
     a:hover {
         color: rgb(74, 6, 6);
     }
-    
+
     a {
         color: $color2;
         text-decoration: none;
     }
-    
-}
 
-html {
-    scroll-behavior: smooth;
 }
 
 @import "header.scss";
@@ -51,21 +51,22 @@ html {
         font-size: 16px;
     }
 
-    .main-index{
+    .main-index {
         .borde {
             border-radius: 10px;
         }
-    
+
         .articulo {
             h2 {
                 font-size: 22px;
             }
+
             p.main {
                 font-size: 18px;
             }
         }
     }
-    
+
 
     footer {
         width: 100%;
@@ -92,18 +93,20 @@ html {
     }
 }
 
-@media (max-width: 1120px){
-    .main-index{
-        .borde{
+@media (max-width: 1120px) {
+    .main-index {
+        .borde {
             height: 300px;
             width: 330px;
             margin-left: 5px;
             margin-right: 5px;
         }
+
         .articulo {
             h2 {
                 font-size: 20px;
             }
+
             p.main {
                 font-size: 17px;
             }
@@ -111,24 +114,26 @@ html {
     }
 }
 
-@media (max-width: 1000px){
-    .nav-pc{
-        .nav{
+@media (max-width: 1000px) {
+    .nav-pc {
+        .nav {
             font-size: 18px;
         }
     }
 
-    .main-index{
-        .borde{
+    .main-index {
+        .borde {
             height: 300px;
             width: 290px;
             margin-left: 5px;
             margin-right: 5px;
         }
+
         .articulo {
             h2 {
                 font-size: 20px;
             }
+
             p.main {
                 font-size: 17px;
             }
@@ -136,66 +141,72 @@ html {
     }
 }
 
-@media (min-width: 918px){
-    .main-indexj{
+@media (min-width: 918px) {
+    .main-indexj {
         display: none;
     }
 }
 
-@media (max-width: 918px){
-    .main-index{
+@media (max-width: 918px) {
+    .main-index {
         display: none;
     }
 
-    .main-indexj{
-        .jumbotron-foto{
+    .main-indexj {
+        .jumbotron-foto {
             background-image: url(../assets/paisaje.jpg);
             background-position: center;
             background-size: cover;
             height: 350px;
         }
-        
-        .jumbotron-foto2{
+
+        .jumbotron-foto2 {
             background-image: url(../assets/huerto-urbano.jpg);
             background-position: center;
             background-size: cover;
             height: 350px;
         }
-        
-        .articuloj{
+
+        .articuloj {
             color: $color1;
             align-content: center;
             text-align: center;
             height: 400px;
         }
-        
-        .h2j{
+
+        .h2j {
             margin: 10px;
             font-size: 25px;
             font-family: "Edu NSW ACT Foundation", cursive;
             font-weight: bold;
         }
-        
-        .mainj{
+
+        .mainj {
             margin: 10px;
             font-size: 20px;
         }
     }
 }
 
-@media (max-width: 830px){
-    .nav-pc{
+@media (max-width: 830px) {
+    .nav-pc {
         display: none;
     }
 }
 
-@media (min-width: 830px){
-    .navbar{
+@media (min-width: 830px) and (max-width: 1200px){
+    img{
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 830px) {
+    .navbar {
         display: none;
     }
 }
 
-@media (max-width: 830px){
+@media (max-width: 830px) {
 
     .navbar {
         background-color: $color1;
@@ -204,40 +215,41 @@ html {
             margin-left: 0px;
             text-align: center;
             color: $color2;
-            
-            img{
+
+            img {
                 height: 70px;
                 width: 180px;
             }
 
-            h2{
+            h2 {
                 font-family: "Edu NSW ACT Foundation", cursive;
                 text-transform: uppercase;
                 font-size: 17px;
             }
         }
-    
+
         button {
             font-size: 20px;
             color: $color2 !important;
         }
-        
-        .collapse{
+
+        .collapse {
             font-size: 17px;
             text-align: center;
         }
     }
-    
+
 
     .container-fluid img {
         height: 60px;
         width: 80px;
     }
 
-    div.redes a{
+    div.redes a {
         color: $color1 !important;
     }
-    a.mail{
+
+    a.mail {
         color: $color1 !important;
     }
 
@@ -257,164 +269,237 @@ html {
             "img4"
             "texto4";
 
-            .info-foto {
-                height: auto;
-            }
-    }   
-    
+        .info-foto {
+            height: auto;
+        }
+    }
+
 }
 
 @media (max-width: 768px) {
+
     .mapa,
     .horario {
         width: 90%;
     }
 
-    .table{
+    .table {
         font-size: 15px;
     }
 }
 
 
-@media (max-width: 680px){
-    
+@media (max-width: 680px) {
+
 
     .contacto {
         text-align: center;
         font-size: 15px;
     }
-    
+
     .derechos {
         font-size: 15px;
     }
 }
 
-@media (max-width: 620px){
-    input{
+@media (max-width: 620px) {
+    input {
         width: 100%;
     }
 
-    textarea{
+    textarea {
         width: 100%;
     }
 }
 
 
-@media (max-width: 550px){
+@media (max-width: 550px) {
 
     .container-fluid img {
         width: 50px;
 
-        .texto{
+        .texto {
             height: auto;
             width: 100%;
         }
     }
 
-    .titulo{
-        h1{
+    .titulo {
+        h1 {
             font-size: 20px;
         }
-    
-        h2{
+
+        h2 {
             font-size: 15px;
         }
     }
 
-    .h2{
+    .h2 {
         font-size: 20px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4, 1fr);
+
+        .item1 {
+            grid-column: 1/2;
+            grid-row: 1/3;
+        }
+
+        .item2 {
+            grid-column: 2/3;
+            grid-row: 1/4;
+        }
+
+        .item3 {
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+
+        .item4 {
+            grid-column: 1/3;
+            grid-row: 4/4;
+        }
+
+        .item5 {
+            grid-column: 1/3;
+            grid-row: 2/4;
+        }
+
+        .item6 {
+            grid-column: 2/3;
+            grid-row: 3/4;
+        }
     }
 }
 
 
-@media (max-width: 470px){
-    
-    .navbar{
-        .titulo{
-            img{
+@media (max-width: 470px) {
+
+    .navbar {
+        .titulo {
+            img {
                 height: 50px;
                 width: 150px;
             }
 
-            h2{
+            h2 {
                 font-size: 15px;
             }
         }
 
-        .collapse{
+        .collapse {
             font-size: 16px;
         }
     }
 
-    .div-copy{
+    .sobrenosotros{
+        padding: 5px;
+
+        h1{
+            font-size: 23px;
+            margin: 10px;
+        }
+
+        p.decoration{
+            font-size: 20px;
+        }
+
+        ul{
+            font-size: 20px !important;
+        }
+    }
+
+    .div-copy {
         padding: 0px;
     }
 
     .grid-container2 {
-    
-        .almacen{
+
+        .almacen {
             font-size: 23px;
         }
-    
-        .infop{
+
+        .infop {
             margin: 10px;
             font-size: 18px;
         }
-    }   
-    
+    }
 
-    footer{
+
+    footer {
         width: 100%;
     }
 
-    iframe{
+    iframe {
         height: 300px;
     }
-    .table{
+
+    .table {
         font-size: 10px;
     }
 }
 
-@media (max-width: 435px){
-    .main-indexj{
-        .articuloj{
+@media (max-width: 455px){
+    .sobrenosotros{
+        padding: 5px;
+
+        h1{
+            font-size: 21px;
+        }
+
+        p.decoration{
+            font-size: 18px;
+        }
+
+        ul{
+            font-size: 18px !important;
+        }
+    }
+}
+
+@media (max-width: 435px) {
+    .main-indexj {
+        .articuloj {
             padding: 20px;
-            .h2j{
+
+            .h2j {
                 font-size: 22px;
             }
 
-            .mainj{
+            .mainj {
                 font-size: 18px;
             }
         }
     }
 
-    .mitad-de-pag{
-        .secciones{
+    .mitad-de-pag {
+        .secciones {
             font-size: 18px;
         }
     }
 
-    footer{
+    footer {
         .contacto {
             font-size: 15px;
         }
-        
+
         .derechos {
             font-size: 14px;
         }
     }
 }
 
-@media (max-width: 390px){
-    .navbar{
-        .titulo{
-            img{
+@media (max-width: 390px) {
+    .navbar {
+        .titulo {
+            img {
                 height: 45px;
                 width: 130px;
             }
 
-            h2{
+            h2 {
                 font-size: 13px;
             }
         }
@@ -424,41 +509,41 @@ html {
         }
     }
 
-    .main-indexj{
-        p.mainj{
+    .main-indexj {
+        p.mainj {
             font-size: 18px;
         }
     }
 }
 
-@media (max-width: 380px){
-    .titulo{
-        h1{
+@media (max-width: 380px) {
+    .titulo {
+        h1 {
             font-size: 18px;
         }
-    
-        h2{
+
+        h2 {
             font-size: 14px;
         }
     }
 
-    .h2{
+    .h2 {
         font-size: 18px;
     }
 
-    .mainj{
+    .mainj {
         margin: 10px;
     }
 
-    .copy{
+    .copy {
         font-size: 18px;
     }
 
-    p.derechosTexto{
+    p.derechosTexto {
         font-size: 15px;
     }
 
-    .grid-container2{
+    .grid-container2 {
         margin: 5px;
         gap: 5px;
     }
@@ -483,24 +568,24 @@ html {
     }
 }
 
-@media (max-width: 350px){
-    .main-indexj{
-        .articuloj{
-            .h2j{
+@media (max-width: 350px) {
+    .main-indexj {
+        .articuloj {
+            .h2j {
                 font-size: 20px;
             }
 
-            .mainj{
+            .mainj {
                 font-size: 17px;
             }
         }
     }
 
-    footer{
+    footer {
         .contacto {
             font-size: 14px;
         }
-        
+
         .derechos {
             font-size: 13px;
         }

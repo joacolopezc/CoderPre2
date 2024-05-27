@@ -78,14 +78,14 @@
       <form action="enviar.php" method="post" enctype="text/plain">
         <fieldset>
           <legend>
-            <h2>Coloca tus datos y comunicate con nosotros!</h2>
+            <h2>Coloca tus datos!</h2>
           </legend>
           <div>
-            <label for="nombre" name="nombre" id="nombre">Nombre:</label>
+            <label for="name" name="nombre" id="nombre">Nombre:</label>
             <input type="text" id="nombre" required placeholder="ingresa tu nombre">
           </div>
           <div>
-            <label for="apellido" name="apellido" id="apellido">Apellido:</label>
+            <label for="lastname" name="apellido" id="apellido">Apellido:</label>
             <input type="text" required placeholder="ingresa tu apellido">
           </div>
           <div>
@@ -94,19 +94,19 @@
           </div>
           <div>
             <label for="number">Telefono:</label>
-            <input type="number" placeholder="ej.: 351515151">
+            <input type="number" placeholder="ej: 351515151">
           </div>
         </fieldset>
-        <fieldset>
+        <fieldset class="enviard">
           <legend>
             <h2>Comunicate con nosotros!</h2>
           </legend>
           <div>
-            <textarea name="comentarios" id="comentarios" cols="50" rows="10" maxlength="500"
+            <textarea name="comentarios" id="comentarios" cols="45" rows="10" maxlength="300"
               placeholder="Escribe tu mensaje..."></textarea>
           </div>
           <div>
-            <input type="submit" value="Enviar">
+            <input class="enviar" type="submit" value="Enviar">
           </div>
         </fieldset>
     </fieldset>

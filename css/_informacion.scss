@@ -1,29 +1,28 @@
 .sobrenosotros {
     text-align: center;
-    padding: 20px;
-    margin: 20px;
+    padding: 10px;
+    margin: 10px;
     color: $color1;
     border: 3px solid $color1;
-    font-size: 20px;
     text-decoration: none;
 
     h1 {
         font-family: "Raleway", sans-serif;
-        margin-bottom: 15px;
-        margin-top: 15px;
+        margin: 15px;
+        font-size: 25px;
     }
     
     .decoration {
         text-decoration: underline;
+        font-size: 23px;
     }
     
-    ul{
-        text-align: center;
+    .info-lista ul{
+        font-size: 22px;
     }
     
     li {
-        margin-bottom: 15px;
-        margin-top: 15px;
+        margin: 15px;
         list-style-type: none;
     }
 }
