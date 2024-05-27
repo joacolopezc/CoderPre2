@@ -1,11 +1,11 @@
-.div-copy{
+.div-copy {
     font-family: "Raleway", sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     padding: 20px;
-    
+
     .copy {
         color: $color1;
         font-size: 28px;
@@ -13,14 +13,14 @@
         text-decoration: underline;
         margin-top: 20px;
     }
-    
+
     p.derechosTexto {
         color: $color1;
         font-size: 23px;
         text-align: center;
         padding: 20px;
     }
-    
+
     p.derechosTexto a {
         color: $color1;
     }
