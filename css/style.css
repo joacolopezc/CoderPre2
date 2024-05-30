@@ -194,6 +194,9 @@ header .nav {
   color: #4c7a34;
   border: 3px solid #4c7a34;
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .sobrenosotros h1 {
   font-family: "Raleway", sans-serif;
@@ -206,8 +209,10 @@ header .nav {
 }
 .sobrenosotros .info-lista ul {
   font-size: 22px;
+  padding: 0px;
+  margin: 0px;
 }
-.sobrenosotros li {
+.sobrenosotros .info-lista li {
   margin: 15px;
   list-style-type: none;
 }
